@@ -13,3 +13,7 @@ export interface License {
   product: Product;
   license: string;
 }
+
+export interface GenerationRequest {
+  product: Product;
+}

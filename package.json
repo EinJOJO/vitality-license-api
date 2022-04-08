@@ -7,12 +7,14 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.20.0",
     "discord-webhook-node": "^1.1.8",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mysql2": "^2.3.3"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.2",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/mysql": "^2.15.21",

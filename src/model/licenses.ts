@@ -28,7 +28,8 @@ export const createLicense = (product: Product) => {
         product: product,
       });
       Logger.log(
-        `Created a new License: ${licenseString} \n Product: ${product}`
+        `Created a new License: ${licenseString} \n Product: ${product}`,
+        'License Generator'
       );
       resolve(licenseString);
     } catch (error) {
