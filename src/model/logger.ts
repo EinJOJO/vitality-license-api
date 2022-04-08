@@ -2,10 +2,10 @@ import { Webhook } from 'discord-webhook-node';
 const hook = new Webhook(process.env.DISCORD_WEBHOOK_URL || '');
 
 const Logger = {
-  log: (message: string) => {
+  log: (message: string, title?: string) => {
     console.log(message);
     try {
-      hook.info('Information', 'Logged', message);
+      hook.info('Information', title || 'Logged', message);
     } catch (error) {
       console.error('Could not send Webhook!');
       console.error(error);
