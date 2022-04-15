@@ -14,7 +14,7 @@ const registerLicense = (args: License) => {
 };
 
 const generateLicenseString = () => {
-  return `DBD-EXPLOIT-${[...Array(25)]
+  return `VITALITYZ-${[...Array(25)]
     .map((i) => (~~(Math.random() * 36)).toString(36).toUpperCase())
     .join('')}`;
 };

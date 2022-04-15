@@ -9,6 +9,6 @@ const params: mysql.ConnectionOptions = {
   port: parseInt(process.env.DB_PORT || '3306'),
 };
 
-const database = mysql.createConnection(params);
+const database = mysql.createPool(params);
 
 export default database;
